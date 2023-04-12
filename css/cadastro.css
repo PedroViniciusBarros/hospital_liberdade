@@ -37,3 +37,7 @@ form {
   transition: all 0.3 ease;
   cursor: pointer;
 }
+form button a{
+  text-decoration: none;
+  color: #FFF;
+}
