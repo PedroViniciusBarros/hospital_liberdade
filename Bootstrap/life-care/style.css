@@ -330,6 +330,12 @@ a img.aligncenter {
     position: relative;
 }
 
+.header_logo{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
 .megamenu .dropdown-menu {
     left: auto;
 }
@@ -373,6 +379,10 @@ a img.aligncenter {
 
 .header_style_01 .navbar-brand {
     padding: 2px 15px 0 15px;
+}
+
+.navbar-brand img {
+    width: 100px !important;      
 }
 
 .header_style_01 .navbar-default .navbar-nav > li > a {
