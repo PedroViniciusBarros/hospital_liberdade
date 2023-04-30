@@ -42,3 +42,11 @@ body {
 .carousel-inner {
   height: 500px;
 }
+
+.carousel-item img{
+  height: 500px;
+}
+
+#carouselExampleControls{
+  margin-bottom: 50px;
+}
