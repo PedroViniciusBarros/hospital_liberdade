@@ -47,6 +47,10 @@ body {
   height: 500px;
 }
 
-#carouselExampleControls{
-  margin-bottom: 50px;
+
+.card-group{
+  margin-top: 27px;
+  margin-left: 129px;
+  margin-right: 129px;
+  margin-bottom: 116px;
 }
