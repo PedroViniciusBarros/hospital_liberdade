@@ -1,14 +1,40 @@
-img{
-  width: 100px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-header{
+#container {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 137px;
+  margin-bottom: 40px;
 }
 
+#imagem {
+  float: left;
+  margin-right: 200px;
+  max-width: 130px;
+}
 
-.header-info ul{
+#botoes {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.botao {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0077FF;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+
+.botao:hover {
+  background-color: #0059B3;
 }
