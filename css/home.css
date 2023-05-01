@@ -84,6 +84,20 @@ body {
   margin-right: 10px;
 }
 
-.historico article p a{
+.historico article hr{
   margin-left: 200px;
+  margin-right: 200px;
+}
+
+.artigo{
+  display: flex;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 200px;
+  background-color: #0059B3;
+  color: #fff;
 }
