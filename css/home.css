@@ -3,19 +3,36 @@ body {
   padding: 0;
 }
 
-#container {
+header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 137px;
+  justify-content: space-around;
+  height: 100px;
   margin-bottom: 40px;
   width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 15px;
 }
 
-#imagem {
+#nome-hospital{
+  margin-right: 125px;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#h{
+  color: #FD7081;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+#logo {
   float: left;
-  margin-right: 200px;
-  max-width: 130px;
+  max-width: 100px;
 }
 
 #botoes {
@@ -23,13 +40,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  margin-left: 150px;
+  list-style: none;
 }
 
 .botao {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #0077FF;
+  background-color: #4549CE;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -47,6 +64,7 @@ body {
 
 .carousel-item img{
   height: 500px;
+  object-fit: cover;
 }
 
 
@@ -79,7 +97,7 @@ body {
 .botao-historico a{
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #0077FF;
+  background-color: #4549CE;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -100,7 +118,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-left: 200px;
-  background-color: #0077FF;
+  background-color: #FD7081;
   color: #fff;
   margin-right: 10px;
   width: 82px;
@@ -112,6 +130,11 @@ body {
   font-size: 30px;
 }
 
+.mes-ano{
+  font-size: 15px;
+  font-weight: 400;
+}
+
 article p a {
   text-decoration: none;
   font-size: 21px;
@@ -119,5 +142,15 @@ article p a {
 }
 
 .sair{
-  background-color: #059862;
+  background-color: #FD7081;
+}
+
+#historico{
+
+  background-color: #E7EDF1;
+}
+
+.historico-titulo h1{
+  color: #004680;
+  text-transform: uppercase;
 }
