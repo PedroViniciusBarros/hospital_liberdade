@@ -54,3 +54,36 @@ body {
   margin-right: 129px;
   margin-bottom: 116px;
 }
+
+.historico{
+  display: flex;
+  /* align-items:center; */
+  flex-direction: column;
+}
+
+
+.historico-titulo{
+  display: flex;
+  justify-content: center;
+}
+
+.botao-historico {
+  display: flex;
+  justify-content: end;
+  margin-right: 200px;
+  
+}
+
+.botao-historico a{
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0077FF;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.historico article p a{
+  margin-left: 200px;
+}
