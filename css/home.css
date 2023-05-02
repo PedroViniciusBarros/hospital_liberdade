@@ -30,6 +30,12 @@ header {
   align-items: center;
 }
 
+.logo a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 #logo {
   float: left;
   max-width: 100px;

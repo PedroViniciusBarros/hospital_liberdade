@@ -2,20 +2,41 @@
   <meta charset="utf-8">
   <title> Hospital da Liberdade</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="imagens/icone_hospital2.png">
-  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-  <form method="get">
-    <label for="email"></label> <br>
-    <input type="text" id="email" name="email" placeholder="Email">
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="./imagens/icone_hospital2.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form>
+        <input type="text" id="login" name="login" placeholder="email@email.com">
+        <input type="text" id="password" name="login" placeholder="password">
+        <input type="submit" class="fadeIn fourth" onclick="red()"/>
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>
 
-    <label for="senha"></label> <br>
-    <input type="text" id="senha" name="senha" placeholder="Senha"> <br><br>
-    <br>
-    <button type="submit"> <a href="./home.html">Entrar</a></button>
-    <br><br>
-    <button><a href="cadastro.html">Criar conta</a></button>
-  </form>
+  <script>
+
+    function red() {
+      return window.location.href = "home.html";
+    }
+  </script>
 </body>

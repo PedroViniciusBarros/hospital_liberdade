@@ -15,20 +15,21 @@
     <title>Marcar Consulta</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <img id="logo" src="./imagens/icone_hospital2.png" alt="Imagem">
-          <span id="nome-hospital"><span id="h">H</span>ospital Liberdade</span>
-        </div>
-        <nav>
-          <ul id="botoes">
-            <li><a class="botao" href="#">Marcar consulta</a></li>
-            <li><a class="botao" href="#">Visualizar consulta</a></li>
-            <li><a class="botao" href="#">Mostrar exames</a></li>
-            <li><a class="botao sair" href=".//login.html">Sair</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <div class="logo"><a href="home.html">
+      <img id="logo" src="./imagens/icone_hospital2.png" alt="Imagem">
+      <span id="nome-hospital"><span id="h">H</span>ospital Liberdade</span></a>
+    </div>
+    <nav>
+      <ul id="botoes">
+        <li><a class="botao" href="./marcar_consulta.html">Marcar consulta</a></li>
+        <li><a class="botao" href="./visualizar.html">Visualizar consulta</a></li>
+        <li><a class="botao" href="./exames.html">Mostrar exames</a></li>
+        <li><a class="botao sair" href=".//login.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
       <div class="header-img">
         <img src="./imagens/img_1.jpg" class="d-block w-100" alt="...">
@@ -51,11 +52,11 @@
                       </select>
                     </div>
                     <div class="mb-3">
-                      <label for="data" class="form-label">Data</label>
-                      <input id="data" type="text" name="data" />
+                      <label for="data" class="form-label data-label">Data</label>
+                      <input id="data" type="text" name="data"  class="data-marcar"/>
                     </div>
                     <div class="mb-3">
-                        <label for="horario" class="form-label">Horário</label>
+                        <label for="horario" class="form-label horario-label">Horário</label>
                         <input type="time" id="horario" name="horario" step="3600">
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
