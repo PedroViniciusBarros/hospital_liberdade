@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><a href="home.html">
+      <img id="logo" src="./imagens/icone_hospital2.png" alt="Imagem">
+      <span id="nome-hospital"><span id="h">H</span>ospital Liberdade</span></a>
+    </div>
+    <nav>
+      <ul id="botoes">
+        <li><a class="botao" href="./marcar_consulta.html">Marcar consulta</a></li>
+        <li><a class="botao" href="./visualizar.html">Visualizar consulta</a></li>
+        <li><a class="botao" href="./exames.html">Mostrar exames</a></li>
+        <li><a class="botao sair" href=".//login.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagens/img_1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/img_2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/img_3.jpg" class="d-block w-100" alt="...">
+        </div>
+        </img>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </section>
+
+  <section>
+    <div class="card-group gap-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="historico">
+    <div class="historico-titulo">
+      <h1>histórico</h1>
+    </div>
+    <div class="historico">
+      <article>
+        <div class="artigo">
+          <div class="data">
+            <span class="dia">25</span>
+            <span class="mes-ano">04, 2023</span>
+          </div>
+          <p><a href="#">Consulta 1</a></p>
+        </div>
+        <div class="botao-historico">
+          <a calss="botao" href="#">Detalhe</a>
+        </div>
+        <hr>
+      </article>
+
+      <article>
+        <div class="artigo">
+          <div class="data">
+            <span class="dia">25</span>
+            <span class="mes-ano">04, 2023</span>
+          </div>
+          <p><a href="#">Consulta 2</a></p>
+        </div>
+        <div class="botao-historico">
+          <a calss="botao" href="#">Detalhe</a>
+        </div>
+        <hr>
+      </article>
+
+      <article>
+        <div class="artigo">
+          <div class="data">
+            <span class="dia">25</span>
+            <span class="mes-ano">04, 2023</span>
+          </div>
+          <p><a href="#">Consulta 3</a></p>
+        </div>
+        <div class="botao-historico">
+          <a calss="botao" href="#">Detalhe</a>
+        </div>
+        <hr>
+      </article>
+    </div>
+  </section>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="text-muted">&copy; 2021 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

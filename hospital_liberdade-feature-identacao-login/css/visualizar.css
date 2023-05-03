@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    margin-bottom: 40px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-img{
+    height: 500px;
+}
+
+.header-img img{
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.div-titulo-consulta{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.input-group-append {
+    cursor: pointer;
+  }
+
+img .ui-datepicker-trigger{
+    width: 50px;
+}
+
+#nome-hospital{
+    margin-right: 125px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  
+  #h{
+    color: #FD7081;
+  }
+  
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo {
+    float: left;
+    max-width: 100px;
+  }
+
+  #botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+  }
+  
+  .botao {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4549CE;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+  
+  }
+  
+  .botao:hover {
+    background-color: #0059B3;
+  }
+
+  .sair{
+    background-color: #FD7081;
+  }
+
+  .div-titulo-consulta {
+    text-align: center;
+  }
+  
+  .titulo-consulta {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  
+  .formulario {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #0038a8;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #002356;
+  }
+
+.div-select{
+    display: flex;
+    align-items: center;
+}
+
+.div-select label{
+    margin-right: 20px;
+}
+
+.data-marcar{
+  border: solid !important;
+  border-color: #002356 !important;
+  border-width: 1px !important;
+  margin-right: 10px;
+}
+  
+.data-label{
+  margin-right: 88px;
+}
+
+.horario-label{
+  margin-right: 130px;
+}
+
+.div-titulo-consulta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-visualizar {
+  margin-top: 20px;
+}

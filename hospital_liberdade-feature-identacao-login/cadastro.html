@@ -1,0 +1,49 @@
+<head>
+  <meta charset="utf-8">
+  <title> Hospital da Liberdade</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="imagens/icone_hospital2.png">
+  <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+  <script src="./javascript/patters.js"></script>
+</head>
+<body>
+  <form>
+    <div class="container">
+      <div class="form-container">
+        <div class="right-container">
+          <div class="right-inner-container">
+            <input type="text" id = "nome" name="nome" placeholder="Nome Completo">
+            <br><br>
+
+            <input type="text" id = "cpf" name="cpf" placeholder="123.456.789-00" OnKeyPress="formatar('###.###.###-##',this)" maxlength="14"
+            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \> <br><br>
+
+            <input type="text" id = "nasc" name="nasc" placeholder="DD/MM/AAAA">
+            <br><br>
+
+            Sexo:
+            <input type="radio" name="Sexo" value="Masculino">Masculino
+            <input type="radio" name="Sexo" value="Feminino">Feminino
+            <br><br>
+
+            <input type="text" id = "tel" placeholder="(XX) XXXXX-XXXX" maxlength="15">
+            <br><br>
+
+            <input type="text" id = "emal" placeholder="email@email.com">
+            <br><br>
+
+            <input type="password" id="pass" name="Senha" minlength="8" required placeholder="Senha">
+            <br><br>
+            <input type="password" id="pass" name="Senha" minlength="8" required placeholder="Confirmar Senha">
+            <br>
+            <button type="submit">Cadastrar</button>
+            <br><br>
+            <button><a href="login.html">Voltar</a></button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+</body>
