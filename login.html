@@ -22,7 +22,7 @@
       <form>
         <input type="text" id="login" name="login" placeholder="email@email.com">
         <input type="text" id="password" name="login" placeholder="password">
-        <input type="submit" class="fadeIn fourth" onclick="red()"/>
+        <input type="submit" class="fadeIn fourth login-button" onclick="red()"/>
       </form>
   
       <!-- Remind Passowrd -->
@@ -35,8 +35,12 @@
 
   <script>
 
-    function red() {
-      return window.location.href = "home.html";
-    }
+$(document).ready(function(){
+       $('.login-button').click(function(){
+            {
+            document.location.href = "www.google.com";
+            } 
+        });
+    });
   </script>
 </body>
