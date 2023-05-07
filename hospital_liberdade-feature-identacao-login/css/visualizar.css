@@ -189,6 +189,7 @@ img .ui-datepicker-trigger{
 }
 
 section {
+  margin-top: 10px !important;
   text-align: center;
 }
 
