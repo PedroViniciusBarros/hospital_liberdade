@@ -182,3 +182,9 @@ img .ui-datepicker-trigger{
 .btn-visualizar {
   margin-top: 20px;
 }
+
+.paginacao-div{
+  display: flex;
+  justify-content: center;
+  ma
+}
