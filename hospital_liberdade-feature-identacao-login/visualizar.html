@@ -33,9 +33,6 @@
   </div>
   <section>
     <div class="div-titulo-consulta">
-      <h1 class="titulo-consulta">Visualizar</h1>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Visualizar
-        Consulta</button>
       <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -81,17 +78,52 @@
     </div>
 
 
-    <div class="paginacao-div">
-    <nav aria-label="Navegação de página exemplo">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
-      </ul>
-    </nav>
-  </div>
+    <section>
+      <h2>Consulta Médica</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Médico</th>
+            <th>Especialidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aqui vão as informações da consulta paginadas -->
+          <tr>
+            <td>01/05/2023</td>
+            <td>10:00</td>
+            <td>Dr. João Silva</td>
+            <td>Cardiologia</td>
+          </tr>
+          <tr>
+            <td>02/05/2023</td>
+            <td>14:30</td>
+            <td>Dra. Maria Santos</td>
+            <td>Pediatria</td>
+          </tr>
+          <tr>
+            <td>03/05/2023</td>
+            <td>08:45</td>
+            <td>Dr. José Souza</td>
+            <td>Oncologia</td>
+          </tr>
+          <!-- Aqui terminam as informações da consulta paginadas -->
+        </tbody>
+      </table>
+      <div class="paginacao-div">
+        <nav aria-label="Navegação de página exemplo">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 </body>
 
 </html>
