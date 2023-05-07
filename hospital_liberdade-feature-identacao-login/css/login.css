@@ -12,6 +12,11 @@ a {
   font-weight: 400;
 }
 
+.cadastrar{
+  text-align: center;
+  width: 213px;
+}
+
 h2 {
   text-align: center;
   font-size: 16px;
