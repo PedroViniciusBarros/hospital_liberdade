@@ -31,99 +31,56 @@
   <div class="header-img">
     <img src="./imagens/img_1.jpg" class="d-block w-100" alt="...">
   </div>
+
   <section>
-    <div class="div-titulo-consulta">
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Consulta Agendada</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table table-bordered">
-                <tr>
-                  <th>Especialidade</th>
-                  <td>Clínica Médica</td>
-                </tr>
-                <tr>
-                  <th>Data</th>
-                  <td>04/05/2023</td>
-                </tr>
-                <tr>
-                  <th>Hora</th>
-                  <td>14:30</td>
-                </tr>
-                <tr>
-                  <th>Unidade do Hospital</th>
-                  <td>Hospital Liberdade</td>
-                </tr>
-                <tr>
-                  <th>Rua</th>
-                  <td>Rua da Liberdade, 123</td>
-                </tr>
-                <tr>
-                  <th>Médico</th>
-                  <td>Dr. José da Silva</td>
-                </tr>
-              </table>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h2 style="margin-top: 20px;">Consulta Médica</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Médico</th>
+          <th>Especialidade</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aqui vão as informações da consulta paginadas -->
+        <tr>
+          <td>01/05/2023</td>
+          <td>10:00</td>
+          <td>Dr. João Silva</td>
+          <td>Cardiologia</td>
+          <td><a href="#" class="botao-especialidade">Ver detalhes</a></td>
+        </tr>
+        <tr>
+          <td>02/05/2023</td>
+          <td>14:30</td>
+          <td>Dra. Maria Santos</td>
+          <td>Pediatria</td>
+          <td><a href="#" class="botao-especialidade">Ver detalhes</a></td>
+        </tr>
+        <tr>
+          <td>03/05/2023</td>
+          <td>08:45</td>
+          <td>Dr. José Souza</td>
+          <td>Oncologia</td>
+          <td><a href="#" class="botao-especialidade">Ver detalhes</a></td>
+        </tr>
+        <!-- Aqui terminam as informações da consulta paginadas -->
+      </tbody>
+    </table>
+    <nav aria-label="Navegação de página exemplo">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+      </ul>
+    </nav>
+  </section>
 
-
-    <section>
-      <h2 class="titulo">Consulta Médica</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Data</th>
-            <th>Hora</th>
-            <th>Médico</th>
-            <th>Especialidade</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Aqui vão as informações da consulta paginadas -->
-          <tr>
-            <td>01/05/2023</td>
-            <td>10:00</td>
-            <td>Dr. João Silva</td>
-            <td>Cardiologia</td>
-          </tr>
-          <tr>
-            <td>02/05/2023</td>
-            <td>14:30</td>
-            <td>Dra. Maria Santos</td>
-            <td>Pediatria</td>
-          </tr>
-          <tr>
-            <td>03/05/2023</td>
-            <td>08:45</td>
-            <td>Dr. José Souza</td>
-            <td>Oncologia</td>
-          </tr>
-          <!-- Aqui terminam as informações da consulta paginadas -->
-        </tbody>
-      </table>
-      <div class="paginacao-div">
-        <nav aria-label="Navegação de página exemplo">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
 </body>
 
 </html>
