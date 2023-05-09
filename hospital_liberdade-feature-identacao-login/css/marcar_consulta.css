@@ -172,3 +172,14 @@ img .ui-datepicker-trigger{
 .horario-label{
   margin-right: 130px;
 }
+
+/* Exibe o ícone do relógio no campo de entrada de horário */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: block;
+  background: url(https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png) no-repeat center center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
