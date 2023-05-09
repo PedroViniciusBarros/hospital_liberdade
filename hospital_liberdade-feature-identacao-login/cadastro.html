@@ -20,27 +20,27 @@
           <div class="right-inner-container">
 
             Nome <br>
-            <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
             <br><br>
 
             CPF <br>
-            <input type="text" id="cpf" name="cpf" placeholder="123.456.789-00" OnKeyPress="formatar('###.###.###-##',this)" maxlength="14" pattern="\d{3}.\d{3}.\d{3}-\d{2}"> <br><br>
+            <input required type="text" id="cpf" name="cpf" placeholder="123.456.789-00" OnKeyPress="formatar('###.###.###-##',this)" maxlength="14" pattern="\d{3}.\d{3}.\d{3}-\d{2}"> <br><br>
 
             Data de Nascimento <br>
-            <input type="text" id="nasc" name="nasc" placeholder="DD/MM/AAAA">
+            <input required type="text" id="nasc" name="nasc" placeholder="DD/MM/AAAA" OnKeyPress="formatar('##/##/####',this)" pattern="\d{2}/\d{2}/\d{4}" maxlength="10">
             <br><br>
 
             Sexo:
-            <input type="radio" name="Sexo" value="Masculino">Masculino
-            <input type="radio" name="Sexo" value="Feminino">Feminino
+            <input required type="radio" name="Sexo" value="Masculino">Masculino
+            <input required type="radio" name="Sexo" value="Feminino">Feminino
             <br><br>
 
             Celular <br>
-            <input type="text" id="tel" placeholder="(XX) XXXXX-XXXX" maxlength="15" pattern="(\d{2})\s\d{5}-\d{4}">
+            <input required  type="text" id="tel" placeholder="(XX) XXXXX-XXXX" maxlength="14" OnKeyPress="formatar('(##)#####-####',this)" pattern="\(d{2})\d{5}-\d{4}">
             <br><br>
 
             Email <br>
-            <input type="text" id="emal" placeholder="email@email.com">
+            <input required  type="text" id="emal" placeholder="email@email.com">
             <br><br>
 
             Senha <br>
