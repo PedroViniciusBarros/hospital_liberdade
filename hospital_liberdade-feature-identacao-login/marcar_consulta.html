@@ -57,7 +57,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="horario" class="form-label horario-label">Horário</label>
-                        <input type="time" id="horario" name="horario" step="1800" min="06:00" max="19:30">
+                        <input type="time" id="horario" name="horario" step="1800" min="06:00" max="19:30" list="time-list">
+                        <datalist id="time-list">
+                          <option value="06:00">
+                          <option value="06:30">
+                          <option value="07:00">
+                          <option value="07:30">
+                        </datalist>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                   </form>
