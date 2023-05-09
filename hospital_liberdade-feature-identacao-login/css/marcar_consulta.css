@@ -182,3 +182,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   border: none;
   cursor: pointer;
 }
+
+.botao{
+  width: 200px;
+}
+
+.botao-div{
+  display: flex;
+  justify-content: center;
+}
