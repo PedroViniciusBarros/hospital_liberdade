@@ -12,20 +12,40 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo"><a href="home.html">
-        <img id="logo" src="./imagens/icone_hospital2.png" alt="Imagem">
-        <span id="nome-hospital"><span id="h">H</span>ospital Liberdade</span></a>
-    </div>
-    <nav>
-      <ul id="botoes">
-        <li><a class="botao" href="./marcar_consulta.html">Marcar consulta</a></li>
-        <li><a class="botao" href="./visualizar.html">Visualizar consulta</a></li>
-        <li><a class="botao" href="./exames.html">Mostrar exames</a></li>
-        <li><a class="botao sair" href=".//login.html">Sair</a></li>
-      </ul>
+  <div class="header">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="home.html">
+            <img id="logo" src="./imagens/icone_hospital2.png" alt="Imagem">
+            <span id="nome-hospital"><span id="h">H</span>ospital Liberdade</span>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active content-nav" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link content-nav" href="./marcar_consulta.html">Marcar consulta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link content-nav" href="./visualizar.html">Visualizar consulta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link content-nav" href="./exames.html">Mostrar exames</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link content-nav" href=".//login.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-  </header>
+  </div>
 
   <div class="header-img">
     <img src="./imagens/img_1.jpg" class="d-block w-100" alt="...">

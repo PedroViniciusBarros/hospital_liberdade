@@ -3,34 +3,60 @@ body {
   padding: 0;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100px;
-  margin-bottom: 40px;
-  width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 15px;
+.nav-item{
+  margin-right: 10px !important;
 }
 
-#nome-hospital{
+.content-nav {
+  color:  #002356!important;
+  text-decoration: none;
+}
+
+.content-nav {
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      #0A58CA,
+     #FD7081,
+      #FD7081
+      
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100% ;
+  background-repeat: no-repeat;
+  transition: background-size 400ms !important;
+}
+
+.content-nav:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+#nome-hospital {
   margin-right: 125px;
   font-weight: 800;
   font-size: 30px;
 }
 
-#h{
+#h {
   color: #FD7081;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
 
-.logo a{
+.logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -39,29 +65,6 @@ header {
 #logo {
   float: left;
   max-width: 100px;
-}
-
-#botoes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  list-style: none;
-}
-
-.botao {
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #4549CE;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  margin-right: 10px;
-
-}
-
-.botao:hover {
-  background-color: #3efafa;
 }
 
 .unit-section {
@@ -90,34 +93,28 @@ header {
   padding: 20px;
 }
 
-
 .carousel-inner {
   height: 500px;
 }
 
-.carousel-item img{
+.carousel-item img {
   height: 500px;
   object-fit: cover;
 }
 
-
-.card-group{
+.card-group {
   margin-top: 27px;
   margin-left: 129px;
   margin-right: 129px;
   margin-bottom: 116px;
 }
 
-
-
-.historico{
+.historico {
   display: flex;
-  /* align-items:center; */
   flex-direction: column;
 }
 
-
-.historico-titulo{
+.historico-titulo {
   display: flex;
   justify-content: center;
 }
@@ -126,10 +123,9 @@ header {
   display: flex;
   justify-content: end;
   margin-right: 200px;
-  
 }
 
-.botao-historico a{
+.botao-historico a {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #4549CE;
@@ -139,16 +135,16 @@ header {
   margin-right: 10px;
 }
 
-.historico article hr{
+.historico article hr {
   margin-left: 200px;
   margin-right: 200px;
 }
 
-.artigo{
+.artigo {
   display: flex;
 }
 
-.data{
+.data {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,12 +156,12 @@ header {
   height: 73px;
 }
 
-.dia{
+.dia {
   font-weight: 600;
   font-size: 30px;
 }
 
-.mes-ano{
+.mes-ano {
   font-size: 15px;
   font-weight: 400;
 }
@@ -173,23 +169,21 @@ header {
 article p a {
   text-decoration: none;
   font-size: 21px;
-  color: #000
+  color: #000;
 }
 
-.sair{
+.sair {
   background-color: #FD7081;
 }
 
-#historico{
-
+#historico {
   background-color: #E7EDF1;
 }
 
-.historico-titulo h1{
+.historico-titulo h1 {
   color: #004680;
   text-transform: uppercase;
 }
-
 
 .unit-section {
   background-color: #F7F7F7;
@@ -217,64 +211,4 @@ article p a {
 .card-text {
   font-size: 16px;
   margin-bottom: 5px;
-}
-
-
-@media screen and (max-width: 1356px) {
-  #botoes {
-    display: none;
-  }
-
-  .menu-hamburguer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .menu-hamburguer ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu-hamburguer span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin-bottom: 5px;
-  }
-
-  .menu-hamburguer.active ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu-hamburguer.active span {
-    background-color: transparent;
-  }
-
-  .menu-hamburguer.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .menu-hamburguer.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-hamburguer.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-  }
-
-  .menu-hamburguer a {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #4549CE;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 10px;
-  }
 }
