@@ -16,3 +16,19 @@ try {
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }
+
+
+$senha = $_POST["Senha"];
+
+echo($senha);
+
+
+$sql = "insert into paciente values(?)";
+//echo $sql;
+
+
+$stmt= $pdo->prepare($sql);
+
+$stmt->execute([$senha]);
+
+
