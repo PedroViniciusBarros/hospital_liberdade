@@ -73,6 +73,11 @@
 
   <section class="unit-section">
     <h2 class="section-title">Conheça nossas unidades</h2>
+
+    <?php
+      echo("hello php");
+    ?>
+
     <div class="container">
       <div class="row">
         <div class="col-md-4">
