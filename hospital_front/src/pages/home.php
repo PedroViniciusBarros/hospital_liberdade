@@ -74,15 +74,11 @@
   <section class="unit-section">
     <h2 class="section-title">Conheça nossas unidades</h2>
 
-    <?php
-      echo("hello php");
-    ?>
-
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="card">
-            <img src="./imagens/Hospital-Unimed-Juiz-de-Fora-anuncia-Business-Center.png" class="card-img-top" alt="Ícone de Hospital">
+            <img src="../../imagens/Hospital-Unimed-Juiz-de-Fora-anuncia-Business-Center.png" class="card-img-top" alt="Ícone de Hospital">
             <div class="card-body">
               <h5 class="card-title">Hospital Central</h5>
               <p class="card-text">Localização: Rua Principal, 123</p>
@@ -93,7 +89,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="./imagens/divulgacao-inova-saude-800x600.png" class="card-img-top" alt="Ícone de Hospital">
+            <img src="../../imagens/divulgacao-inova-saude-800x600.png" class="card-img-top" alt="Ícone de Hospital">
             <div class="card-body">
               <h5 class="card-title">Hospital Norte</h5>
               <p class="card-text">Localização: Avenida Norte, 456</p>
@@ -104,7 +100,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="./imagens/Moinhosdevento-800x600.png" class=" card-img-top" alt="Ícone de Hospital">
+            <img src="../../imagens/Moinhosdevento-800x600.png" class=" card-img-top" alt="Ícone de Hospital">
             <div class="card-body">
               <h5 class="card-title">Hospital Sul</h5>
               <p class="card-text">Localização: Praça Sul, 789</p>

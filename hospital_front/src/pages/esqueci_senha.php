@@ -6,7 +6,7 @@
   <title> Hospital da Liberdade</title>
 
   <link rel="shortcut icon" type="image/x-icon" href="imagens/icone_hospital2.png">
-  <link rel="stylesheet" type="text/css" href="css/esqueci_senha.css">
+  <link rel="stylesheet" type="text/css" href="../../css/esqueci_senha.css">
 
 </head>
 
@@ -18,7 +18,7 @@
       <div class="form-container">
         <!-- Icon -->
         <div class="icone">
-          <img src="./imagens/icone_hospital2.png" id="icon" alt="User Icon" />
+          <img src="../../imagens/icone_hospital2.png" id="icon" alt="User Icon" />
         </div>
         <div class="right-container">
           <div class="right-inner-container">

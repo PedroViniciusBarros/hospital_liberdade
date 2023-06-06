@@ -125,7 +125,7 @@
     $(function () {
       $("#data").datepicker({
         showOn: 'button',
-        buttonImage: 'imagens/calendario_resized.png',
+        buttonImage: '../../imagens/calendario_resized.png',
         buttonImageOnly: true,
         dateFormat: 'dd/mm/yy',
         dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
