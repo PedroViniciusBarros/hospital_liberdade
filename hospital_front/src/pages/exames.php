@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/exame.css">
+  <link rel="stylesheet" href="../../css/exame.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Exame</title>
@@ -17,7 +17,7 @@
       <div class="container-fluid">
         <div class="logo">
           <a href="home.html">
-            <img id="logo" src="./imagens/icone_hospital2.png" alt="Imagem">
+            <img id="logo" src="../../imagens/icone_hospital2.png" alt="Imagem">
             <span id="nome-hospital"><span id="h">H</span>ospital Liberdade</span>
           </a>
         </div>
@@ -27,19 +27,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active content-nav" href="./home.html">Home</a>
+              <a class="nav-link active content-nav" href="home.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-nav" href="./marcar_consulta.html">Marcar consulta</a>
+              <a class="nav-link content-nav" href="marcar_consulta.php">Marcar consulta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-nav" href="./visualizar.html">Visualizar consulta</a>
+              <a class="nav-link content-nav" href="visualizar.php">Visualizar consulta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-nav" href="./exames.html">Mostrar exames</a>
+              <a class="nav-link content-nav" href="exames.php">Mostrar exames</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-nav" href=".//login.html">Sair</a>
+              <a class="nav-link content-nav" href="login.php">Sair</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
   </div>
 
   <div class="header-img">
-    <img src="./imagens/img_1.jpg" class="d-block w-100" alt="...">
+    <img src="../../imagens/img_1.jpg" class="d-block w-100" alt="...">
   </div>
   <section class="exame">
     <h2 class="titulo">Resultado de Exame Médico</h2>

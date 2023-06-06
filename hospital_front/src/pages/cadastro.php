@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <title> Hospital da Liberdade</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="imagens/icone_hospital2.png">
-  <link rel="stylesheet" type="text/css" href="css/cadastro.css">
-  <script src="./javascript/pattern.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../imagens/icone_hospital2.png">
+  <link rel="stylesheet" type="text/css" href="../../css/cadastro.css">
+  <script src="../../javascript/pattern.js"></script>
 
 </head>
 
@@ -17,7 +17,7 @@
       <div class="form-container">
         <!-- Icon -->
         <div class="icone">
-          <img src="./imagens/icone_hospital2.png" id="icon" alt="User Icon" />
+          <img src="../../imagens/icone_hospital2.png" id="icon" alt="User Icon" />
         </div>
         <div class="right-container">
           <div class="right-inner-container">
@@ -54,7 +54,7 @@
             <input type="password" id="confirmar-senha" name="Senha" minlength="8" required placeholder="Confirmar Senha">
             <br>
 
-            <input type="submit" class="fadeIn fourth cadastrar" formaction="login.html" value="Cadastrar">
+            <input type="submit" class="fadeIn fourth cadastrar" formaction="login.php" value="Cadastrar">
 
           </div>
         </div>
