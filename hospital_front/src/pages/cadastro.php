@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <form method="POST"  onsubmit="return validarFormulario()">
+  <form method="POST" action="../../classes/validarEmail.php" onsubmit="return validarFormulario()">
     <div class="container">
       <div class="form-container">
         <!-- Icon -->
@@ -64,13 +64,6 @@
       </div>
     </div>
   </form>
-
-  <?php
-  require_once "../../classes/validarEmail.php";
-  $validar = new ValidadorEmail();
-  $validar->validarEmail();
-  ?>
-
 </body>
 
 </html>
