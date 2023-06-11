@@ -22,13 +22,13 @@
       </div>
 
       <!-- Login Form -->
-      <form class="formulario">
+      <form action="../../classes/login_class.php" class="formulario" method="post">
         <label class="usuario" for="login">Usuário</label>
         <input type="text" id="login" name="login" placeholder="email@email.com"><br>
         Senha<br>
-        <input type="text" id="password" name="login" placeholder="Senha">
-        <input type="submit" class="fadeIn fourth entrar" formaction="home.php" value="Entrar">
-        <input type="submit" class="fadeIn fourth cadastrar" formaction="cadastro.php" value="Cadastrar">
+        <input type="text" id="senha" name="senha" placeholder="Senha">
+        <input type="submit" class="fadeIn fourth entrar" name="entrar" value="Entrar">
+        <input type="submit" class="fadeIn fourth cadastrar" formaction="cadastro.php" value="Cadastrar" >
 
       </form>
 
