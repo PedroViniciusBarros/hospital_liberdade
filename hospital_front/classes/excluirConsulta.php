@@ -14,7 +14,7 @@ $visualizar->excluirConsulta($_SESSION["id"], $consultas);
 echo '<script> alert("Consulta Excluida!") </script>';
 
 echo '<script>
-window.location.href = "../src/pages/home.php";
+window.location.href = "../src/pages/visualizar.php";
 </script>';
 
 ?>

@@ -18,8 +18,8 @@ class Consulta
 
   public function cadastrar($id_usuario_session)
   {
-    $sql = "INSERT INTO consulta(id, horario, dt, fk_usuario) 
-          VALUES(NULL, TIME(:horario), :dt, :fk_usuario)";
+    $sql = "INSERT INTO consulta(id, horario, dt, especialidade, fk_usuario) 
+          VALUES(NULL, TIME(:horario), :dt, :especialidade, :fk_usuario)";
 
     try {
       $consulta = $this->conexao->prepare($sql);
@@ -28,6 +28,12 @@ class Consulta
       $horario_com_segundos = $this->horario . ":00";
 
       $consulta->bindParam(":horario", $horario_com_segundos, PDO::PARAM_STR);
+
+      $consulta->bindParam(
+        ":especialidade",
+        $this->especialidade,
+        PDO::PARAM_STR
+      );
 
       // Defina a data corretamente
       $data = date("Y-m-d", strtotime(str_replace("/", "-", $this->dt)));
@@ -71,7 +77,6 @@ class Consulta
     return $resultado;
   }
 
-  
   // Getter e Setter para $horario
   public function getHorario()
   {

@@ -63,11 +63,11 @@
           <label for="especialidade" class="form-label">Especialidades</label>
           <select class="form-select" id="especialidade" name="especialidade">
             <option value="">Selecione uma opção</option>
-            <option value="cardiologia">Cardiologia</option>
-            <option value="dermatologia">Dermatologia</option>
-            <option value="ginecologia">Ginecologia</option>
-            <option value="neurologia">Neurologia</option>
-            <option value="ortopedia">Ortopedia</option>
+            <option value="Cardiologia">Cardiologia</option>
+            <option value="Dermatologia">Dermatologia</option>
+            <option value="Ginecologia">Ginecologia</option>
+            <option value="Neurologia">Neurologia</option>
+            <option value="Ortopedia">Ortopedia</option>
           </select>
         </div>
         <div class="mb-3">
