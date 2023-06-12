@@ -4,7 +4,6 @@ require_once "cadastro_class.php";
 
 if (
   empty($_POST["emal"]) ||
-  empty($_POST["senha-antiga"]) ||
   empty($_POST["Senha"]) ||
   empty($_POST["confirmar-senha"])
 ) {
@@ -31,24 +30,17 @@ if (
 </script>';
   } else {
     if ($_POST["confirmar-senha"] === $_POST["Senha"]) {
-      if (password_verify($_POST["senha-antiga"], $dados["Senha"])) {
-        $cadastro = new Cadastro();
-        $usuario->atualizarSenha($dados, $cadastro->codificaSenha($novaSenha));
-        echo '<script> alert("Senha alterada com sucesso!") </script>';
-        echo '<script>
+      $cadastro = new Cadastro();
+      $usuario->atualizarSenha($dados, $cadastro->codificaSenha($novaSenha));
+      echo '<script> alert("Senha alterada com sucesso!") </script>';
+      echo '<script>
     window.location.href = "../src/pages/login.php";
 </script>';
-      } else {
-        // Caso contrário, mantenha na página login e apresente uma mensagem
-        echo '<script> alert("senha incorreta!") </script>';
-        echo '<script>
-    window.location.href = "../src/pages/esqueci_senha.php";
-</script>';
-      }
     } else {
-      echo '<script> alert("A nova senha deve ser identica em confirmar senha!") </script>';
+      // Caso contrário, mantenha na página login e apresente uma mensagem
+      echo '<script> alert("a nova senha e confirmar senha precisam ser iguais!") </script>';
       echo '<script>
-  window.location.href = "../src/pages/esqueci_senha.php";
+    window.location.href = "../src/pages/esqueci_senha.php";
 </script>';
     }
   }

@@ -25,14 +25,7 @@
 
           Email <br>
             <input required type="text" id="emal" name="emal" placeholder="email@email.com">
-            <br><br>
-
-            
-            Senha antiga<br>
-            <input type="password" id="senha-antiga" name="senha-antiga" minlength="8" required placeholder="Senha">
-            <br><br>
-
-      
+            <br><br>  
 
             <label for="Senha" id="senha-label">Nova Senha</label>
             <input type="password" id="Senha" name="Senha" minlength="8" required placeholder="Senha">

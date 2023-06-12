@@ -23,10 +23,10 @@
 
       <!-- Login Form -->
       <form action="../../classes/login_class.php" class="formulario" method="post">
-        <label class="usuario" for="login">Usuário</label>
-        <input type="text" id="login" name="login" placeholder="email@example.com"><br>
-        <label for="senha">Senha</label><br>
-        <input type="text" id="password" name="senha" placeholder="Senha">
+        <label class="input-label usuario" for="login">Usuário</label>
+        <input type="text" class="input" name="login" placeholder="email@example.com"><br>
+        <label class="input-label" for="senha">Senha</label><br>
+        <input type="password" class="input" name="senha" placeholder="Senha">
         <input type="submit" class="fadeIn fourth entrar" name="entrar" value="Entrar">
         <input type="submit" class="fadeIn fourth cadastrar" formaction="cadastro.php" value="Cadastrar">
 
