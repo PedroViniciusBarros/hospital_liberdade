@@ -41,10 +41,7 @@
               <a class="nav-link content-nav" href="visualizar.php">Visualizar consulta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-nav" href="exames.php">Mostrar exames</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link content-nav" href="login.php">Sair</a>
+              <a class="nav-link content-nav" href="../../classes/logout.php">Sair</a>
             </li>
           </ul>
         </div>
@@ -61,8 +58,8 @@
       <h1 class="titulo-consulta">Marcar consulta</h1>
     </div>
     <div class="formulario container">
-      <form>
-        <div class="mb-3 div-select">
+      <form action="../../classes/consulta_valid.php" method="POST">
+        <div class="mb-3 div-select"> 
           <label for="especialidade" class="form-label">Especialidades</label>
           <select class="form-select" id="especialidade" name="especialidade">
             <option value="">Selecione uma opção</option>

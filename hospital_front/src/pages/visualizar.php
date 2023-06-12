@@ -12,6 +12,22 @@
 </head>
 
 <body>
+
+<?php
+require_once "../../classes/session.php";
+require_once "../../classes/visualizar.php";
+
+session_start();
+
+// Instancie a classe Visualizar
+$visualizar = new Visualizar();
+
+// Chame o método buscarUltimasConsultas() para obter as últimas consultas
+$ultimasConsultas = $visualizar->buscarUltimasConsultas(10, $_SESSION["id"]);
+$consulta = $visualizar->buscarConsultas($_SESSION["id"]);
+
+echo var_dump($consulta);
+?>
   <div class="header">
     <nav class="navbar navbar-expand-xl navbar-light">
       <div class="container-fluid">
@@ -36,10 +52,7 @@
               <a class="nav-link content-nav" href="visualizar.php">Visualizar consulta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-nav" href="exames.php">Mostrar exames</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link content-nav" href="login.php">Sair</a>
+              <a class="nav-link content-nav" href="../../classes/logout.php">Sair</a>
             </li>
           </ul>
         </div>
@@ -59,46 +72,21 @@
         <tr>
           <th>Data</th>
           <th>Hora</th>
-          <th>Médico</th>
           <th>Especialidade</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <!-- Aqui vão as informações da consulta paginadas -->
-        <tr>
-          <td>01/05/2023</td>
-          <td>10:00</td>
-          <td>Dr. João Silva</td>
-          <td>Cardiologia</td>
-          <td><a href="exames.php" class="botao-especialidade">Ver detalhes</a></td>
-        </tr>
-        <tr>
-          <td>02/05/2023</td>
-          <td>14:30</td>
-          <td>Dra. Maria Santos</td>
-          <td>Pediatria</td>
-          <td><a href="exames.php" class="botao-especialidade">Ver detalhes</a></td>
-        </tr>
-        <tr>
-          <td>03/05/2023</td>
-          <td>08:45</td>
-          <td>Dr. José Souza</td>
-          <td>Oncologia</td>
-          <td><a href="exames.php" class="botao-especialidade">Ver detalhes</a></td>
-        </tr>
-        <!-- Aqui terminam as informações da consulta paginadas -->
-      </tbody>
+  <?php foreach ($ultimasConsultas as $consulta): ?>
+    <tr>
+      <td><?php echo $consulta["dt"]; ?></td>
+      <td><?php echo $consulta["horario"]; ?></td>
+      <td><?php echo $consulta["especialidade"]; ?></td>
+      <td><a href="../../classes/excluirConsulta.php" class="botao-especialidade">Cancelar</a></td>
+    </tr>
+  <?php endforeach; ?>
+</tbody>
     </table>
-    <nav aria-label="Navegação de página exemplo">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
-      </ul>
-    </nav>
   </section>
 
 

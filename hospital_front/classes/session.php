@@ -46,11 +46,9 @@ class Acesso
   //pode vincular esse método com um botão de sair/logout, que ao clicar, executará o processo
   public function logout(): void
   {
-    session_start();
-
     session_destroy();
 
-    header("location:../index.php?logout");
+    header("location:../src/pages/login.php");
 
     die(); // exit;
   }

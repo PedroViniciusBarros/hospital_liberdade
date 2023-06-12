@@ -1,5 +1,6 @@
 <?php
 require_once "cadastro_class.php";
+require_once "session.php";
 // Verificar se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   // Criar uma instância da classe Cadastro

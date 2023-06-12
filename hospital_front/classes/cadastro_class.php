@@ -1,5 +1,6 @@
 <?php
 require_once "banco.php";
+require_once "session.php";
 
 class Cadastro
 {
@@ -36,8 +37,8 @@ class Cadastro
 
   public function cadastrar(): void
   {
-    $sql = "INSERT INTO usuario(id, Nome, Cpf, Dt_nascimento, Sexo, Celular, Email, Senha) 
-      VALUES(NULL, :nome, :cpf, :dt_nascimento, :sexo, :celular, :email, :senha)";
+    $sql = "INSERT INTO usuario(id, Nome, Cpf, Dt_nascimento, Sexo, Celular, Email, Senha, fk_consulta) 
+      VALUES(NULL, :nome, :cpf, :dt_nascimento, :sexo, :celular, :email, :senha, NULL)";
 
     try {
       $consulta = $this->conexao->prepare($sql);
@@ -58,6 +59,7 @@ class Cadastro
       die("Erro: " . $erro->getMessage());
     }
   }
+
   public function getConexao()
   {
     return $this->conexao;

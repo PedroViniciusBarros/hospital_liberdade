@@ -35,10 +35,7 @@
               <a class="nav-link content-nav" href="visualizar.php">Visualizar consulta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-nav" href="exames.php">Mostrar exames</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link content-nav" href="login.php">Sair</a>
+              <a class="nav-link content-nav" href="../../classes/logout.php">Sair</a>
             </li>
           </ul>
         </div>
