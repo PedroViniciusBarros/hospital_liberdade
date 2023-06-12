@@ -25,8 +25,6 @@ $visualizar = new Visualizar();
 // Chame o método buscarUltimasConsultas() para obter as últimas consultas
 $ultimasConsultas = $visualizar->buscarUltimasConsultas(10, $_SESSION["id"]);
 $consulta = $visualizar->buscarConsultas($_SESSION["id"]);
-
-echo var_dump($consulta);
 ?>
   <div class="header">
     <nav class="navbar navbar-expand-xl navbar-light">
