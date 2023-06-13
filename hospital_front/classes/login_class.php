@@ -7,6 +7,9 @@ require_once "session.php";
 /*Se algum dos campos estiver vazio, o login não continuará*/
 if (empty($_POST["login"]) || empty($_POST["senha"])) {
   echo '<script> alert("Campos obrigatorios!") </script>';
+  echo '<script>
+  window.location.href = "../src/pages/login.php";
+</script>';
 } else {
   // Capturamos o e-mail informado
   $usuario = new Usuario();

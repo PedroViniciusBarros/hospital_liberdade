@@ -18,34 +18,60 @@ class Consulta
 
   public function cadastrar($id_usuario_session)
   {
-    $sql = "INSERT INTO consulta(id, horario, dt, especialidade, fk_usuario) 
-          VALUES(NULL, TIME(:horario), :dt, :especialidade, :fk_usuario)";
+    $sql =
+      "SELECT COUNT(*) FROM consulta WHERE horario = TIME(:horario) AND dt = :dt AND especialidade = :especialidade";
+    $consultaExistente = $this->conexao->prepare($sql);
 
-    try {
-      $consulta = $this->conexao->prepare($sql);
+    $horario_com_segundos = $this->horario . ":00";
 
-      // Adicione os segundos ao horário
-      $horario_com_segundos = $this->horario . ":00";
+    $consultaExistente->bindParam(
+      ":horario",
+      $horario_com_segundos,
+      PDO::PARAM_STR
+    );
 
-      $consulta->bindParam(":horario", $horario_com_segundos, PDO::PARAM_STR);
+    $data = date("Y-m-d", strtotime(str_replace("/", "-", $this->dt)));
+    $consultaExistente->bindParam(":dt", $data, PDO::PARAM_STR);
+    $consultaExistente->bindParam(
+      ":especialidade",
+      $this->especialidade,
+      PDO::PARAM_STR
+    );
+    $consultaExistente->execute();
 
-      $consulta->bindParam(
-        ":especialidade",
-        $this->especialidade,
-        PDO::PARAM_STR
-      );
+    $existeConsulta = $consultaExistente->fetchColumn();
 
-      // Defina a data corretamente
-      $data = date("Y-m-d", strtotime(str_replace("/", "-", $this->dt)));
-      $consulta->bindParam(":dt", $data, PDO::PARAM_STR);
+    if ($existeConsulta != 0) {
+      return false; // Já existe uma consulta com os mesmos valores
+    } else {
+      $sqlInserir = "INSERT INTO consulta(id, horario, dt, especialidade, fk_usuario) 
+                 VALUES(NULL, TIME(:horario), :dt, :especialidade, :fk_usuario)";
 
-      $consulta->bindParam(":fk_usuario", $id_usuario_session, PDO::PARAM_STR);
-      $consulta->execute();
-      return true;
-    } catch (Exception $erro) {
-      die("Erro: " . $erro->getMessage());
+      try {
+        $consulta = $this->conexao->prepare($sqlInserir);
+
+        $consulta->bindParam(":horario", $horario_com_segundos, PDO::PARAM_STR);
+        $consulta->bindParam(
+          ":especialidade",
+          $this->especialidade,
+          PDO::PARAM_STR
+        );
+
+        $data = date("Y-m-d", strtotime(str_replace("/", "-", $this->dt)));
+        $consulta->bindParam(":dt", $data, PDO::PARAM_STR);
+
+        $consulta->bindParam(
+          ":fk_usuario",
+          $id_usuario_session,
+          PDO::PARAM_STR
+        );
+        $consulta->execute();
+
+        return true;
+      } catch (Exception $erro) {
+        die("Erro: " . $erro->getMessage());
+      }
     }
-    return false;
   }
 
   public function atualizarFk($last_id, $user_id): void
